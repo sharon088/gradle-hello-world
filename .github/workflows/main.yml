@@ -17,4 +17,4 @@ jobs:
       name: Check out code
 
     - name: Increment Version
-      run: ./increment_version.sh
+      run: chmod +x ./increment_version.sh
