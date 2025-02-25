@@ -13,7 +13,7 @@ RUN chmod +x gradlew
 RUN ./gradlew shadowJar
 
 # Stage 2: Final Image
-FROM openjdk:17-jre-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 
