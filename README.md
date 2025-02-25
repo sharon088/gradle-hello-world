@@ -36,7 +36,7 @@ This project is set up with GitHub Actions to automate the process of building, 
 
 ## Workflow Steps:
 1. <ins>Version increment:</ins>\
-Each time you push to the `master` branch, the pipeline increments the version of the application in build.gradle.kts by updating the PATCH version (e.g., from `1.0.0` to `1.0.1`).
+Each time you push to the `Master` branch, the pipeline increments the version of the application in build.gradle.kts by updating the PATCH version (e.g., from `1.0.0` to `1.0.1`).
 2. <ins>Build and Push Docker image:</ins>\
 The workflow builds the Docker image and pushes it to Docker Hub with the updated version tag.
 3. <ins>Run the Docker Container:</ins>\
