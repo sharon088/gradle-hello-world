@@ -1,11 +1,11 @@
-name: build and push 
+name: build HelloWorld with gradle and publish it to Dockerhub
 
 on:
   push:
     branches: [ "master" ]
 
 jobs:
-  increment version, build and push:
+  build-and-push:
     runs-on: ubuntu-latest
       
     steps:
