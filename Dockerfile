@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 # Grant execute permission to gradlew
-RUN chmod +x gradlew
+#RUN chmod +x gradlew
 
 # Build the application
 RUN ./gradlew shadowJar
@@ -18,7 +18,7 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Create non-root user
-RUN adduser -D myuser
+RUN adduser myuser
 
 # Copy the fat JAR from the build stage (using wildcard)
 COPY --from=build /app/build/libs/*.jar /app/app.jar
