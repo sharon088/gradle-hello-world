@@ -1,4 +1,4 @@
-name: build HelloWorld with gradle and publish it to Dockerhub
+name: build and push 
 
 on:
   push:
