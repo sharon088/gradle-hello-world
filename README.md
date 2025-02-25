@@ -16,3 +16,17 @@ build - Compiles Hello World and creates JAR files.
 The jar files located ar gradle-hello-world/build/libs/
 make the runnable jar executable then, use "java -jar gradle-hello-world-all.jar"
 ```
+
+# Docker
+This Project includes a Dockerfile that can be used to build and run the application inside a container.
+## Build and Run with Docker
+1. Build the Docker image:
+you can build the Docker iamge the following command:
+```
+docker build -t your-dockerhub-username/gradle-hello-world .
+```
+2. Run the Docker container:
+After building the image, you can run the container:
+```
+docker run your-dockerhub-username/gradle-hello-world
+```
