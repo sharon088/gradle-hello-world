@@ -35,14 +35,10 @@ docker run your-dockerhub-username/gradle-hello-world
 This project is set up with GitHub Actions to automate the process of building, versioning, and pushing the Docker image to Docker Hub.
 
 ## Workflow Steps:
-1. Version increment:
-	Each time you push to the master branch, the pipeline increments the version of the application in build.gradle.kts by updating the PATCH version (e.g., from `1.0.0` to `1.0.1`).
-2. Build and Push Docker image:
-	The workflow builds the Docker image and pushes it to Docker Hub with the updated version tag.
-3. Run the Docker Container:
-	The pipeline runs the Docker container to ensure that the built image works as expected.
-4. Commit and Push Changes:
-	After the image is built and pushed, the workflow commits and pushes the updated `build.gradle.kts` file with the new version.
+1. Version increment:  Each time you push to the `master` branch, the pipeline increments the version of the application in build.gradle.kts by updating the PATCH version (e.g., from `1.0.0` to `1.0.1`).
+2. Build and Push Docker image:  The workflow builds the Docker image and pushes it to Docker Hub with the updated version tag.
+3. Run the Docker Container:  The pipeline runs the Docker container to ensure that the built image works as expected.
+4. Commit and Push Changes:  After the image is built and pushed, the workflow commits and pushes the updated `build.gradle.kts` file with the new version.
 
 Notes
 - Secrets Required:
