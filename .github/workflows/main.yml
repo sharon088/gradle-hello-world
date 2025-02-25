@@ -36,8 +36,10 @@ jobs:
           context: .
           push: true
           tags : ${{ vars.DOCKER_TAG_USER_NAME }}/${{ vars.DOCKER_IMAGE_NAME }}:${{ steps.increment_version.outputs.NEW_VERSION }}
-          build-args: |
-            JAR_VERSION=${{ steps.increment_version.outputs.NEW_VERSION }}
+
+      - name: Run Docker container
+        run: |
+          docker run ${{ env.DOCKER_TAG_USER_NAME }}/${{ env.DOCKER_IMAGE_NAME }}:${{ steps.increment_version.outputs.NEW_VERSION }}
           
       - name: Commit and Push Changes
         run: |
