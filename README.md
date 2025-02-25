@@ -44,8 +44,8 @@ The pipeline runs the Docker container to ensure that the built image works as e
 4. <ins>Commit and Push Changes:</ins>\
 After the image is built and pushed, the workflow commits and pushes the updated `build.gradle.kts` file with the new version.
 
-[!NOTE]
-- Secrets Required:
-	- `DOCKERHUB_USERNAME` - Your Docker Hub username.
-	- `DOCKERHUB_TOKEN` - Your Docker hub token (for authentication).
-- Docker Image Tags: The image is tagged using the format: your-dockerhub-username/gradle-hello-world:<new-version>
+> [!NOTE]
+> - Secrets Required:
+>	- `DOCKERHUB_USERNAME` - Your Docker Hub username.
+>	- `DOCKERHUB_TOKEN` - Your Docker hub token (for authentication).
+> - Docker Image Tags: The image is tagged using the format: your-dockerhub-username/gradle-hello-world:<new-version>
