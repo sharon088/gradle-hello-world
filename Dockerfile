@@ -18,7 +18,7 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Create non-root user
-RUN useradd -m myuser
+RUN adduser -D myuser
 
 # Copy the fat JAR from the build stage (using wildcard)
 COPY --from=build /app/build/libs/*.jar /app/app.jar
