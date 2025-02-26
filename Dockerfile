@@ -6,9 +6,6 @@ WORKDIR /app
 # Copy everything from the current directory
 COPY . .
 
-# Grant execute permission to gradlew
-RUN chmod +x gradlew
-
 # Build the application
 RUN ./gradlew shadowJar
 
