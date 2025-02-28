@@ -51,4 +51,4 @@ After the image is built and pushed, the workflow commits and pushes the updated
 > - Vars Required:
 >	- `DOCKER_TAG_USER_NAME` - Your Docker Hub username for tagging.
 >	- `DOCKER_IMAGE_NAME` - Your image name.
-> - Docker Image Tags: The image is tagged using the format: your-dockerhub-username/gradle-hello-world: <new-version>
+> - Docker Image Tags: The image is tagged using the format: your-dockerhub-username/gradle-hello-world: new-version
