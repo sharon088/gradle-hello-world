@@ -1,7 +1,7 @@
 # gradle-hello-world
 # Java Hello World using the Gradle Wrapper and the Kotlin DSL
 This is a Hello World project that contains the most important parts of the Gradle build scripts.
-
+ 
 # Tasks
 ```
 build - Compiles Hello World and creates JAR files.
